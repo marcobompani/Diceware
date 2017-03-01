@@ -10,7 +10,7 @@ for par in $@; do
 		echo "Usage: `basename $0` [--lang, --words, --help]"
 		echo
 		echo "-h, --help	show this help and exit"
-		echo "-l, --lang	set the language of the list language to use (default en)"
+		echo "-l, --lang	set the language of the list to use (default en)"
 		echo "-w, --words	set the password length in words (default 8)"
 		exit
 	fi

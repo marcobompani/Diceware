@@ -4,7 +4,7 @@ Bash implementation of Diceware (using urandom)
 diceware_password_generator.sh [--lang, --words, --help]
 
 -h, --help	show this help and exit<br>
--l, --lang	set the language of the list language to use (default en)<br>
+-l, --lang	set the language of the list to use (default en)<br>
 -w, --words	set the password length in words (default 8)<br>
 ## Supported Language
 * English - en
