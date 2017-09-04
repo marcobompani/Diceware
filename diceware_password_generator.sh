@@ -37,7 +37,7 @@ for par in $@; do
 done	
 for ((i=1; i<=$N;i++)); do
 	NUMBER=$(cat /dev/urandom | tr -cd '1-6' | head -c 5)
-	WORD=$(grep "$NUMBER" $DIR/word_list/word_list_$LAN.txt | awk '{print $2}')
+	WORD=$(awk -v n="$NUMBER" '$1~n{print $2}' word_list/word_list_$LAN.txt)
 	PASSWORD="$PASSWORD $WORD"
 done	
 echo $PASSWORD
