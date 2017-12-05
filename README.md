@@ -7,9 +7,9 @@ Different implementations of Diceware
 ./diceware_password_generator.py [-h] [-l LANG] [-w WORDS]
 ```
 
-**-h, --help**	  show this help and exit
-**-l, --lang**	  set the language of the list to use (default en)
-**-w, --words**   set the password length in words (default 8)
+**-h, --help**	  show this help and exit<br>
+**-l, --lang**	  set the language of the list to use (default en)<br>
+**-w, --words**   set the password length in words (default 8)<br>
 
 ### Go
 ```
