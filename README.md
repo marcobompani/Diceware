@@ -1,8 +1,8 @@
 # Diceware
 Different implementations of Diceware
 ## Usage
-diceware_password_generator.sh [-h] [-l LANG] [-w WORDS]
-diceware_password_generator.py [-h] [-l LANG] [-w WORDS]
+diceware_password_generator.sh [-h] [-l LANG] [-w WORDS]<br>
+diceware_password_generator.py [-h] [-l LANG] [-w WORDS]<br>
 
 **-h, --help**	  show this help and exit<br>
 **-l, --lang**	  set the language of the list to use (default en)<br>
