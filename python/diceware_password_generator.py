@@ -1,5 +1,5 @@
 import argparse
-from random import randint
+from random import SystemRandom
 
 def extractWord(code):
     with open('word_list/word_list_{}.txt'.format(args.lang), 'r') as f:
@@ -15,9 +15,10 @@ parser.add_argument('-w', '--words', type=int, default=8, help='set the password
 args = parser.parse_args()
 
 password = ''
+cryptogen = SystemRandom()
 
 for i in range(0, args.words):
-    num = [randint(1,6) for p in range(0,5)]
+    num = [cryptogen.randrange(1,7) for p in range(0,5)]
     code = ''.join(str(n) for n in num)
     password = password + ' ' + extractWord(code)
 
